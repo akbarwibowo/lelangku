@@ -79,7 +79,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="C:\Users\putra\OneDrive\Documents\College\Sem 5\Mobile App\UI assets\profile.svg" />
+                                                <entry key="imagePath" value="C:\Users\putra\OneDrive\Documents\College\Sem 5\Mobile App\UI assets\auction.png" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -111,7 +111,7 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="outputName" value="ic_profile" />
+                                      <entry key="outputName" value="ic_auction" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -305,7 +305,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialiconsoutlined/search/outline_search_24.xml" />
+                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialiconsoutlined/chat/outline_chat_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -315,8 +315,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="f0f0f0" />
-                            <entry key="outputName" value="outline_search_24" />
+                            <entry key="outputName" value="outline_chat_24" />
                             <entry key="sourceFile" value="C:\Users\putra\AndroidStudioProjects\lelangku" />
                           </map>
                         </option>
