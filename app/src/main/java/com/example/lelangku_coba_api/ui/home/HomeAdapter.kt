@@ -9,9 +9,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.lelangku_coba_api.R
 import com.example.lelangku_coba_api.data.remote.response.MyProductsItem
-import com.example.lelangku_coba_api.utils.Constant.BASE_URL
+import com.example.lelangku_coba_api.data.remote.response.MyProductsItemItem
 
-class HomeAdapter(private val list: List<MyProductsItem>): RecyclerView.Adapter<HomeAdapter.MyViewHolder>() {
+class HomeAdapter(private val list: List<MyProductsItemItem>): RecyclerView.Adapter<HomeAdapter.MyViewHolder>() {
     inner class MyViewHolder(view: View): RecyclerView.ViewHolder(view){
         val title: TextView = view.findViewById(R.id.product_title)
         val id: TextView = view.findViewById(R.id.product_id)
