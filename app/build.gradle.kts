@@ -6,7 +6,7 @@ plugins {
 
 
 android {
-    namespace = "com.example.lelangku_coba_api"
+    namespace = "com.example.lelangku"
     compileSdk = 34
 
     defaultConfig {

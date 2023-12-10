@@ -1,7 +1,7 @@
-package com.example.lelangku_coba_api.di
+package com.example.lelangku.di
 
-import com.example.lelangku_coba_api.data.remote.ApiInterface
-import com.example.lelangku_coba_api.utils.Constant.BASE_URL
+import com.example.lelangku.data.remote.ApiInterface
+import com.example.lelangku.utils.Constant.BASE_URL
 import okhttp3.OkHttpClient
 import org.koin.dsl.module
 import retrofit2.Retrofit

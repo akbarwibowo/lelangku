@@ -1,12 +1,12 @@
-package com.example.lelangku_coba_api.ui.home
+package com.example.lelangku.ui.home
 
 import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.lelangku_coba_api.Repository
-import com.example.lelangku_coba_api.data.remote.response.PhotoResponse
+import com.example.lelangku.Repository
+import com.example.lelangku.data.remote.response.PhotoResponse
 import kotlinx.coroutines.launch
 import retrofit2.Response
 

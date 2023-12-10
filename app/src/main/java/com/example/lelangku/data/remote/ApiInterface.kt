@@ -1,12 +1,9 @@
-package com.example.lelangku_coba_api.data.remote
+package com.example.lelangku.data.remote
 
-import com.example.lelangku_coba_api.data.remote.response.PhotoResponse
-import com.example.lelangku_coba_api.utils.Constant.API_KEY
+import com.example.lelangku.data.remote.response.PhotoResponse
 import retrofit2.Response
 import retrofit2.http.GET
-import retrofit2.http.Query
 import retrofit2.http.QueryMap
-import java.time.temporal.TemporalQueries
 
 interface ApiInterface {
     @GET("?key=41173386-0ea5ac02e26669fae4688c67b")

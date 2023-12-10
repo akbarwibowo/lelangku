@@ -1,4 +1,4 @@
-package com.example.lelangku_coba_api.utils
+package com.example.lelangku.utils
 
 object Constant {
     const val BASE_URL = "https://pixabay.com/api/"

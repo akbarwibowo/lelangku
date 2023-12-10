@@ -1,6 +1,6 @@
-package com.example.lelangku_coba_api
+package com.example.lelangku
 
-import com.example.lelangku_coba_api.data.remote.RemoteRepository
+import com.example.lelangku.data.remote.RemoteRepository
 
 class Repository(private val remoteRepository: RemoteRepository) {
     suspend fun getProducts() = remoteRepository.getProducts()

@@ -1,8 +1,7 @@
-package com.example.lelangku_coba_api
+package com.example.lelangku
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.lelangku_coba_api.ui.home.HomeFragment
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

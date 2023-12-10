@@ -1,9 +1,9 @@
-package com.example.lelangku_coba_api.utils
+package com.example.lelangku.utils
 
 import android.app.Application
-import com.example.lelangku_coba_api.di.networkModule
-import com.example.lelangku_coba_api.di.repositoryModule
-import com.example.lelangku_coba_api.di.viewModelModule
+import com.example.lelangku.di.networkModule
+import com.example.lelangku.di.repositoryModule
+import com.example.lelangku.di.viewModelModule
 import org.koin.android.BuildConfig
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger

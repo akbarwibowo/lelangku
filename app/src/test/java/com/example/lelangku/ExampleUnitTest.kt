@@ -1,4 +1,4 @@
-package com.example.lelangku_coba_api
+package com.example.lelangku
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package com.example.lelangku_coba_api.data.remote.response
+package com.example.lelangku.data.remote.response
 
 
 import com.google.gson.annotations.SerializedName

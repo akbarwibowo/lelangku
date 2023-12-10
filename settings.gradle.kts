@@ -13,6 +13,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Lelangku_Coba_Api"
+rootProject.name = "Lelangku"
 include(":app")
  

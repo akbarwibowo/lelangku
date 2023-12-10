@@ -1,4 +1,4 @@
-package com.example.lelangku_coba_api.data.remote
+package com.example.lelangku.data.remote
 
 class RemoteRepository(private val apiService: ApiInterface) {
     private val queryMap = mapOf(

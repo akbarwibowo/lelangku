@@ -1,4 +1,4 @@
-package com.example.lelangku_coba_api.ui.home
+package com.example.lelangku.ui.home
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,8 +7,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.lelangku_coba_api.R
-import com.example.lelangku_coba_api.data.remote.response.Hit
+import com.example.lelangku.R
+import com.example.lelangku.data.remote.response.Hit
 
 class HomeAdapter(private val list: List<Hit>): RecyclerView.Adapter<HomeAdapter.MyViewHolder>() {
     inner class MyViewHolder(view: View): RecyclerView.ViewHolder(view){
