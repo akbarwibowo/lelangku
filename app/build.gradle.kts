@@ -4,6 +4,7 @@ plugins {
     id("kotlin-kapt")
 }
 
+
 android {
     namespace = "com.example.lelangku_coba_api"
     compileSdk = 34
@@ -84,4 +85,5 @@ dependencies {
     //Glide
     implementation("com.github.bumptech.glide:glide:4.14.1")
     kapt("com.github.bumptech.glide:compiler:4.13.2")
+
 }

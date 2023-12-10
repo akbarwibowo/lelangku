@@ -26,7 +26,7 @@ class HomeAdapter(private val list: List<MyProductsItemItem>): RecyclerView.Adap
         holder.title.text = list[position].title
         holder.id.text = list[position].title
         Glide.with(holder.itemView.context)
-            .load("https://jsonplaceholder.typicode.com/${list[position].url}")
+            .load(list[position].url)
             .into(holder.image)
     }
 
@@ -35,6 +35,6 @@ class HomeAdapter(private val list: List<MyProductsItemItem>): RecyclerView.Adap
     }
 
     interface onItemClick{
-        fun setOnItemClick(data: MyProductsItem, position: Int)
+        fun setOnItemClick(data: MyProductsItemItem, position: Int)
     }
 }

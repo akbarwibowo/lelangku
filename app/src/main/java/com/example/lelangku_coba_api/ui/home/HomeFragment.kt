@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.lelangku_coba_api.data.remote.response.MyProductsItemItem
 import com.example.lelangku_coba_api.databinding.FragmentHomeBinding
 import org.koin.android.ext.android.inject
 
@@ -14,7 +15,7 @@ class HomeFragment : Fragment() {
     private lateinit var _binding: FragmentHomeBinding
     private val binding get() = _binding
     private val viewModel: HomeViewModel by inject()
-    private var listProducts: List<MyProductsItem> = listOf()
+    private var listProducts: List<MyProductsItemItem> = listOf()
 
 
     override fun onCreateView(
@@ -32,7 +33,7 @@ class HomeFragment : Fragment() {
         with(viewModel){
             observeProducts.observe(requireActivity()){
                     it.let { data ->
-                        listProducts = data.body()?.results?: listOf()
+                        listProducts = data.body() ?: listOf()
                         with(binding.productList){
                             adapter = HomeAdapter(listProducts)
                             layoutManager = LinearLayoutManager(requireContext())

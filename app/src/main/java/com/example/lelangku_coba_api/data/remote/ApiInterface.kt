@@ -7,5 +7,5 @@ import retrofit2.http.GET
 
 interface ApiInterface {
     @GET("photos")
-    suspend fun getProducts(): Response<MyProductsItemItem>
+    suspend fun getProducts(): Response<MyProductsItem>
 }
