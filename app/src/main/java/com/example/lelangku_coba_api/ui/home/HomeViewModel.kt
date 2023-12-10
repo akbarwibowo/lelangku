@@ -6,14 +6,13 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.lelangku_coba_api.Repository
-import com.example.lelangku_coba_api.data.remote.response.MyProductsItem
-import com.example.lelangku_coba_api.data.remote.response.MyProductsItemItem
+import com.example.lelangku_coba_api.data.remote.response.PhotoResponse
 import kotlinx.coroutines.launch
 import retrofit2.Response
 
 class HomeViewModel(private val repository: Repository): ViewModel() {
-    private val getProducts = MutableLiveData<Response<MyProductsItem>>()
-    val observeProducts: LiveData<Response<MyProductsItem>> = getProducts
+    private val getProducts = MutableLiveData<Response<PhotoResponse>>()
+    val observeProducts: LiveData<Response<PhotoResponse>> = getProducts
 
     fun getProducts(){
         viewModelScope.launch {

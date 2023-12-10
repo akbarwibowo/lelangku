@@ -1,5 +1,6 @@
 package com.example.lelangku_coba_api.utils
 
 object Constant {
-    const val BASE_URL = "https://jsonplaceholder.typicode.com/"
+    const val BASE_URL = "https://pixabay.com/api/"
+    const val API_KEY = "41173386-0ea5ac02e26669fae4688c67b"
 }

@@ -8,10 +8,9 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.lelangku_coba_api.R
-import com.example.lelangku_coba_api.data.remote.response.MyProductsItem
-import com.example.lelangku_coba_api.data.remote.response.MyProductsItemItem
+import com.example.lelangku_coba_api.data.remote.response.Hit
 
-class HomeAdapter(private val list: List<MyProductsItemItem>): RecyclerView.Adapter<HomeAdapter.MyViewHolder>() {
+class HomeAdapter(private val list: List<Hit>): RecyclerView.Adapter<HomeAdapter.MyViewHolder>() {
     inner class MyViewHolder(view: View): RecyclerView.ViewHolder(view){
         val title: TextView = view.findViewById(R.id.product_title)
         val id: TextView = view.findViewById(R.id.product_id)
@@ -23,18 +22,14 @@ class HomeAdapter(private val list: List<MyProductsItemItem>): RecyclerView.Adap
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        holder.title.text = list[position].title
-        holder.id.text = list[position].title
+        holder.title.text = list[position].tags
+        holder.id.text = list[position].user
         Glide.with(holder.itemView.context)
-            .load(list[position].url)
+            .load(list[position].largeImageURL)
             .into(holder.image)
     }
 
     override fun getItemCount(): Int {
         return list.size
-    }
-
-    interface onItemClick{
-        fun setOnItemClick(data: MyProductsItemItem, position: Int)
     }
 }
